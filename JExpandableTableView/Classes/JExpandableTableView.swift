@@ -115,7 +115,7 @@ public extension JExpandableTableViewDelegate{
     }
     
     func tableView(_ tableView: JExpandableTableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat{
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: JExpandableTableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat{
@@ -172,7 +172,7 @@ public class JExpandableTableView: UIView , UITableViewDataSource, UITableViewDe
         self.tableview.reloadData()
     }
     
-    public func reloadRows(at indexPaths: [IndexPath], with animation: UITableViewRowAnimation){
+    public func reloadRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation){
         self.tableview.reloadRows(at: indexPaths, with: animation)
     }
     
